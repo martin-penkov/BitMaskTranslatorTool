@@ -9,7 +9,7 @@ fetch("config/config.json")
     behaviorConfig = response;
     console.log(response);
     processData();
-    currentBinaryString = decimalToBinary(Number(document.getElementById('inputData').value), Object.keys(behaviorConfig).length - 1);
+    currentBinaryString = decimalToBinary(Number(document.getElementById('inputData').value), Object.keys(behaviorConfig).length);
 });
 
 function processData() {    
@@ -91,7 +91,7 @@ function removeLastDigit() {
 function onChange() {
     validateInput();
     processData();
-    currentBinaryString = decimalToBinary(Number(document.getElementById('inputData').value), Object.keys(behaviorConfig).length - 1);
+    currentBinaryString = decimalToBinary(Number(document.getElementById('inputData').value), Object.keys(behaviorConfig).length);
     console.log("Current binary string is set to: " + currentBinaryString);
 }
 
