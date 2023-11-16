@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bit Mask Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Bit Mask Translator</h2>
+    
+    <div id="container">
+        <div id="inputContainer">
+            <label for="inputData">Entered Bit Value:</label>
+            <textarea id="inputData" oninput="validateInput()" maxlength="30"></textarea>
+            <div id="keypad">
+                <button onclick="appendToInput('1')">1</button>
+                <button onclick="appendToInput('2')">2</button>
+                <button onclick="appendToInput('3')">3</button>
+                
+                <button onclick="appendToInput('4')">4</button>
+                <button onclick="appendToInput('5')">5</button>
+                <button onclick="appendToInput('6')">6</button>
+                
+                <button onclick="appendToInput('7')">7</button>
+                <button onclick="appendToInput('8')">8</button>
+                <button onclick="appendToInput('9')">9</button>
+
+                <button onclick="clearInput()">C</button>
+                <button onclick="appendToInput('0')">0</button>
+                <button onclick="removeLastDigit()">DEL</button>
+            </div>
+        </div>
+        
+        <div id="outputContainer">
+            <h3>Output:</h3>
+            <table id="outputData"></table>
+        </div>
+    </div>
+    <h2>PS: You can click on each output key in the table to activate/deactivate it</h2>
+    <script type="module" src="inputUtils.js" class="styled-table"></script>
+</body>
+</html>

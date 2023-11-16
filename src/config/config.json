@@ -1,0 +1,14 @@
+{
+    "AlwaysRenderLobbyButton": 0,
+    "AlwaysRenderCashierButton": 1,
+    "SendMsgOnLobbyButtonClick": 2,
+    "SendMsgOnCashierButtonClick": 3,
+    "DisableLobbyRedirect": 4,
+    "DisableCashierRedirect": 5,
+    "EnableGameCloseOnInactivity": 6,
+    "RedirectTopMostWindow": 7,
+    "LogoutOnLobbyButtonClick": 8,
+    "DisableFullscreenLogic": 9,
+    "HideGameVersion": 10,
+    "EnableDebugMode": 11
+}

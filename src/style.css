@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#inputContainer {
+    width: 40%;
+}
+
+#outputContainer {
+    width: 55%;
+}
+
+textarea {
+    width: 100%;
+    height: 100pt;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 90px;
+    resize: none;
+}
+
+#keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 100%;
+    padding: 20px;
+    font-size: 35px;
+    cursor: pointer;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+#keypad button:nth-child(1),
+#keypad button:nth-child(2),
+#keypad button:nth-child(3),
+#keypad button:nth-child(4),
+#keypad button:nth-child(5),
+#keypad button:nth-child(6),
+#keypad button:nth-child(7),
+#keypad button:nth-child(8),
+#keypad button:nth-child(9),
+#keypad button:nth-child(10) {
+    grid-column: span 1;
+    text-align: center;
+}
+
+#outputData {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.enabled-behavior {
+    background-color: #5efc63; /* Light green for enabled */
+    color: black;
+}
+
+.disabled-behavior {
+    background-color: #e85462; /* Light red for disabled */
+    color: black;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    height: 80%;
+    margin-bottom: 20px; 
+}
+
+.styled-table th {
+    border: 2px solid #000; /* Thicker horizontal outline */
+    padding: 30px;
+}
+
+.behavior-row-element:hover {
+    transform: scaleY(1.1);
+    transform: scaleX(1.1);
+    transform-origin: center;
+    cursor: pointer;
+    transition: 0.15s all ease;
+}
+
+.styled-table td {
+    border: 1px solid #ddd; /* Light vertical outline */
+    padding: 45px;
+}
