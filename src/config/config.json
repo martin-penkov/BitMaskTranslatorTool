@@ -10,5 +10,6 @@
     "LogoutOnLobbyButtonClick": 8,
     "DisableFullscreenLogic": 9,
     "HideGameVersion": 10,
-    "EnableDebugMode": 11
+    "EnableDebugMode": 11,
+    "IsLobbySupported": 12
 }
